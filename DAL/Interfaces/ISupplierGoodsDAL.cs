@@ -13,5 +13,7 @@ namespace DAL.Interfaces
         List<SupplierGoodsDTO> GetAllSupplierGoods();
         List<SupplierGoodsDTO> GetAllSupplierGoodsSorted(int n);
         void DeleteSupplierGood(int id);
+        List<SupplierGoodsDTO> GetAllSupplierGoodsSorted(int n);
+        List<SupplierGoodsDTO> GetAllSupplierGoodsSorted(int n);
     }
 }

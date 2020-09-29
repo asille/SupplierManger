@@ -21,12 +21,12 @@ namespace DAL.Concrete
             using (SqlConnection conn = new SqlConnection(this._connectionString))
             using (SqlCommand comm = conn.CreateCommand())
             {
-                comm.CommandText = "insert into User (FullName, Mail, Login,Password)  values (@fullname, @mail, @login, @password)";
+                comm.CommandText = "insert into User (FullName, Mail, Login,Password)  values (@FullName, @Mail, @Login, @Password)";
                 comm.Parameters.Clear();
-                comm.Parameters.AddWithValue("@title", user.FullName);
-                comm.Parameters.AddWithValue("@title", user.Mail);
-                comm.Parameters.AddWithValue("@title", user.Login);
-                comm.Parameters.AddWithValue("@title", user.Password);
+                comm.Parameters.AddWithValue("@FullName", user.FullName);
+                comm.Parameters.AddWithValue("@Mail", user.Mail);
+                comm.Parameters.AddWithValue("@Login", user.Login);
+                comm.Parameters.AddWithValue("@Password", user.Password);
 
                 conn.Open();
 
@@ -58,11 +58,11 @@ namespace DAL.Concrete
                 conn.Open();
                 SqlDataReader reader = comm.ExecuteReader();
 
-                List<UserDTO> items = new List<UserDTO>();
+                List<UserDTO> user = new List<UserDTO>();
                 while (reader.Read())
                 {
 
-                    items.Add(new UserDTO
+                    user.Add(new UserDTO
                     {
                         ID = Convert.ToInt32(reader["ID"]),
                         FullName = reader["FullName"].ToString(),
@@ -72,17 +72,53 @@ namespace DAL.Concrete
                     });
                 }
 
-                return items;
+                return user;
             }
-        }
-        public List<UserDTO> GetAllUsersSorted()
-        {
-            throw new NotImplementedException();
         }
 
         public List<UserDTO> GetAllUsersSorted(int n)
         {
-            throw new NotImplementedException();
+            using (SqlConnection conn = new SqlConnection(this._connectionString))
+            using (SqlCommand comm = conn.CreateCommand())
+            {
+
+
+
+                if (n == 1)
+                {
+                    comm.CommandText = "select * from User order by FullName";
+                }
+                if (n == 2)
+                {
+                    comm.CommandText = "select * from User order by Mail";
+
+                }
+                if (n == 3)
+                { comm.CommandText = "select * from User order by ID"; }
+
+                else
+                { comm.CommandText = "select * from User"; }
+
+
+
+                conn.Open();
+                SqlDataReader reader = comm.ExecuteReader();
+
+                List<UserDTO> user = new List<UserDTO>();
+                while (reader.Read())
+                {
+
+                    user.Add(new UserDTO
+                    {
+                        ID = Convert.ToInt32(reader["ID"]),
+                        FullName = reader["FullName"].ToString(),
+                        Mail = reader["Mail"].ToString(),
+                        Login = reader["Login"].ToString(),
+                        Password = Convert.ToByte(reader["Password"])
+                    });
+                }
+                return user;
+            }
         }
 
         public UserDTO GetUserById(int id)
@@ -91,7 +127,7 @@ namespace DAL.Concrete
             using (SqlCommand comm = conn.CreateCommand())
             {
                 conn.Open();
-                UserDTO items = new UserDTO();
+                UserDTO user = new UserDTO();
 
                 comm.CommandText = $"select * from User where ID={id}";
 
@@ -100,16 +136,16 @@ namespace DAL.Concrete
                 while (reader.Read())
                 {
 
-                    items = new UserDTO
+                    user = new UserDTO
                     {
-                        ID = Convert.ToInt32(reader["UserID"]),
+                        ID = Convert.ToInt32(reader["ID"]),
                         FullName = reader["Name"].ToString(),
                         Mail = reader["Mail"].ToString(),
                         Login = reader["Login"].ToString(),
                     };
                 }
 
-                return items;
+                return user;
             }
         }
 
@@ -130,7 +166,7 @@ namespace DAL.Concrete
 
                     items = new UserDTO
                     {
-                        ID = Convert.ToInt32(reader["UserID"]),
+                        ID = Convert.ToInt32(reader["ID"]),
                         FullName = reader["Name"].ToString(),
                         Mail = reader["Mail"].ToString(),
                         Login = reader["Login"].ToString(),
@@ -148,8 +184,7 @@ namespace DAL.Concrete
             {
                 comm.CommandText = "update User set FullName= @FullName, Mail=@Mail where ID = @ID";
                 comm.Parameters.Clear();
-                comm.Parameters.AddWithValue("@ItemID", user.ID);
-                //comm.Parameters.AddWithValue("@Name", item.Name);
+                comm.Parameters.AddWithValue("@ID", user.ID);
                 comm.Parameters.AddWithValue("@FullName", user.FullName);
                 comm.Parameters.AddWithValue("@Mail", user.Mail);
                 conn.Open();
