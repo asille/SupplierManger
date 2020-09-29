@@ -1,0 +1,12 @@
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\bin\Debug\SupplierManger.exe.config
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\bin\Debug\SupplierManger.exe
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\bin\Debug\SupplierManger.pdb
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\obj\Debug\SupplierManger.csprojAssemblyReference.cache
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\obj\Debug\SupplierManger.csproj.CoreCompileInputs.cache
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\obj\Debug\SupplierManger.exe
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\obj\Debug\SupplierManger.pdb
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\bin\Debug\DAL.dll
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\bin\Debug\DTO.dll
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\bin\Debug\DAL.pdb
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\bin\Debug\DTO.pdb
+C:\Users\Василь\source\repos\SupplierManger\SupplierManger\obj\Debug\SupplierManger.csproj.CopyComplete

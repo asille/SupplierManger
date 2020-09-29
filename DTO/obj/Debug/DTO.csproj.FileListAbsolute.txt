@@ -1,0 +1,6 @@
+C:\Users\Василь\source\repos\SupplierManger\DTO\bin\Debug\DTO.dll
+C:\Users\Василь\source\repos\SupplierManger\DTO\bin\Debug\DTO.pdb
+C:\Users\Василь\source\repos\SupplierManger\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Василь\source\repos\SupplierManger\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Василь\source\repos\SupplierManger\DTO\obj\Debug\DTO.dll
+C:\Users\Василь\source\repos\SupplierManger\DTO\obj\Debug\DTO.pdb

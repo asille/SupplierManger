@@ -1,0 +1,9 @@
+C:\Users\Василь\source\repos\SupplierManger\DAL\bin\Debug\DAL.dll
+C:\Users\Василь\source\repos\SupplierManger\DAL\bin\Debug\DAL.pdb
+C:\Users\Василь\source\repos\SupplierManger\DAL\bin\Debug\DTO.dll
+C:\Users\Василь\source\repos\SupplierManger\DAL\bin\Debug\DTO.pdb
+C:\Users\Василь\source\repos\SupplierManger\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Василь\source\repos\SupplierManger\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Василь\source\repos\SupplierManger\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Василь\source\repos\SupplierManger\DAL\obj\Debug\DAL.dll
+C:\Users\Василь\source\repos\SupplierManger\DAL\obj\Debug\DAL.pdb
