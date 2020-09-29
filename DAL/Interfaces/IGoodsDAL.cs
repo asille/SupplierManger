@@ -10,7 +10,11 @@ namespace DAL.Interfaces
     public interface IGoodsDAL
     {
         GoodsDTO GetGoodsById(int id);
+        GoodsDTO GetGoodsByName(string name);
+
         List<GoodsDTO> GetAllGoods();
+        List<GoodsDTO> GetAllGoodsSorted(int n);
+
         GoodsDTO UpdateGoods(GoodsDTO goods);
         GoodsDTO CreateGoods(GoodsDTO goods);
         void DeleteGoods(int id);
