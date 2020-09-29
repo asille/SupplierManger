@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\GoodsDAL.cs" />
+    <Compile Include="Concrete\HistoryDAL.cs" />
+    <Compile Include="Concrete\RoleDAL.cs" />
+    <Compile Include="Concrete\SupplierGoodsDAL.cs" />
+    <Compile Include="Concrete\SupplierStatusDAL.cs" />
+    <Compile Include="Concrete\UserDAL.cs" />
     <Compile Include="Interfaces\IGoodsDAL.cs" />
     <Compile Include="Interfaces\IHistotyDAL.cs" />
     <Compile Include="Interfaces\IRoleDAL.cs" />
@@ -49,9 +55,7 @@
     <Compile Include="Interfaces\IUserDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Concrete\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{d298b85e-b437-4ea9-88f6-acbe2371d744}</Project>
