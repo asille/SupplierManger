@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Interfaces
 {
-    interface IHistory
+    public interface IHistory
     {
         HistoryDTO AddHistory(HistoryDTO history);
         HistoryDTO ChangeHistory(HistoryDTO history);

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Interfaces
 {
-    interface IUser
+    public interface IUser
     {
         UserDTO AddUser(UserDTO user);
         UserDTO ChangeUser(UserDTO user);

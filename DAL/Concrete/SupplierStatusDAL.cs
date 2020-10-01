@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Concrete
 {
-    class SupplierStatusDAL : ISupplierStatusDAL
+    public class SupplierStatusDAL : ISupplierStatusDAL
     {
         private string _connectionString;
         public SupplierStatusDAL(string connectionString)

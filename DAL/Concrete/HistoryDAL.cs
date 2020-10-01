@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Concrete
 {
-    class HistoryDAL : IHistotyDAL
+    public class HistoryDAL : IHistotyDAL
     {
         private string _connectionString;
         public HistoryDAL(string connectionString)

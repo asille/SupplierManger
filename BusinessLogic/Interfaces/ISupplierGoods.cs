@@ -8,11 +8,10 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Interfaces
 {
-    interface ISupplierGoods
+    public interface ISupplierGoods
     {
-        void ShowupplierGoodsSorted(int n);
-        void ShowupplierGoods();
-        void RemoveupplierGoods(int ID);
-        SupplierGoodsDTO GetupplierGoods(int ID);
+        void ShowSupplierGoods();
+        void RemoveSupplierGoods(int ID);
+        SupplierGoodsDTO GetSupplierGoods(int ID);
     }
 }

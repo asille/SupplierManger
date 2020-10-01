@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Concrete
 {
-    class RoleDAL : IRoleDAL
+    public class RoleDAL : IRoleDAL
     {
         private string _connectionString;
         public RoleDAL(string connectionString)

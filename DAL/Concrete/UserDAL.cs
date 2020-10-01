@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Concrete
 {
-    class UserDAL : IUserDAL
+    public class UserDAL : IUserDAL
     {
         private string _connectionString;
         public UserDAL(string connectionString)

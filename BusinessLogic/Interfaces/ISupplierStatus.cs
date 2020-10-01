@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Interfaces
 {
-    interface ISupplierStatus
+    public interface ISupplierStatus
     {
         SupplierStatusDTO AddStatus(SupplierStatusDTO supplierStatus);
         SupplierStatusDTO ChangeStatus(SupplierStatusDTO supplierStatus);

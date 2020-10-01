@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Concrete
 {
-    class GoodsDAL : IGoodsDAL
+    public class GoodsDAL : IGoodsDAL
     {
         private string _connectionString;
         public GoodsDAL(string connectionString)
@@ -64,6 +64,7 @@ namespace DAL.Concrete
                     {
                         ID = Convert.ToInt32(reader["ID"]),
                         Name = reader["Name"].ToString(),
+                        Price = reader["Price"].ToString(),
                         Description = reader["Description"].ToString()
                     });
 
@@ -112,6 +113,7 @@ namespace DAL.Concrete
                     {
                         ID = Convert.ToInt32(reader["ID"]),
                         Name = reader["Name"].ToString(),
+                        Price = reader["Price"].ToString(),
                         Description = reader["Description"].ToString()
                     });
                 }
@@ -138,6 +140,7 @@ namespace DAL.Concrete
                     {
                         ID = Convert.ToInt32(reader["ID"]),
                         Name = reader["Name"].ToString(),
+                        Price = reader["Price"].ToString(),
                         Description = reader["Description"].ToString()
                     };
                 }
@@ -165,6 +168,7 @@ namespace DAL.Concrete
                     {
                         ID = Convert.ToInt32(reader["ID"]),
                         Name = reader["Name"].ToString(),
+                        Price = reader["Price"].ToString(),  //if i use Convert.ToInt32(reader["Price"]) - gives error, because of decimal type of variable in sql
                         Description = reader["Description"].ToString()
                     };
                 }

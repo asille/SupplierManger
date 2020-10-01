@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Concrete
 {
-    class SupplierGoodsDAL : ISupplierGoodsDAL
+    public class SupplierGoodsDAL : ISupplierGoodsDAL
     {
         private string _connectionString;
         public SupplierGoodsDAL(string connectionString)
@@ -49,33 +49,6 @@ namespace DAL.Concrete
                     });
                 }
 
-                return supplierGoods;
-            }
-        }
-
-        public List<SupplierGoodsDTO> GetAllSupplierGoodsSorted(int n)
-        {
-            using (SqlConnection conn = new SqlConnection(this._connectionString))
-            using (SqlCommand comm = conn.CreateCommand())
-            {
-
-                if (n == 1)
-                { comm.CommandText = "select * from SupplierGoods order by ID"; }
-
-                else
-                { comm.CommandText = "select * from SupplierGoods"; }
-                conn.Open();
-                SqlDataReader reader = comm.ExecuteReader();
-
-                List<SupplierGoodsDTO> supplierGoods = new List<SupplierGoodsDTO>();
-                while (reader.Read())
-                {
-
-                    supplierGoods.Add(new SupplierGoodsDTO
-                    {
-                        ID = Convert.ToInt32(reader["ID"])
-                    });
-                }
                 return supplierGoods;
             }
         }

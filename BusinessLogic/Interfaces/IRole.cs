@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Interfaces
 {
-    interface IRole
+    public interface IRole
     {
         RoleDTO AddRole(RoleDTO role);
+        void ShowRoles();
         RoleDTO ChangeRole(RoleDTO role);
-        void ShowRolesSorted(int n);
-        void ShowRole();
         void RemoveRole(int ID);
         RoleDTO GetRole(int ID);
     }

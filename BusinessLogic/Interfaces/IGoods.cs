@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Interfaces
 {
-    interface IGoods
+    public interface IGoods
     {
         GoodsDTO AddGoods(GoodsDTO goods);
         GoodsDTO ChangeGoods(GoodsDTO goods);
