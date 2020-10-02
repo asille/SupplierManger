@@ -13,5 +13,6 @@ namespace DTO
         public DateTime DateTime { get; set; }
         public int GoodID { get; set; }
         public int UserID { get; set; }
+
     }
 }

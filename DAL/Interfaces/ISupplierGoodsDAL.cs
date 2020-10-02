@@ -12,5 +12,6 @@ namespace DAL.Interfaces
         SupplierGoodsDTO GetSupplierGoodById(int id);
         List<SupplierGoodsDTO> GetAllSupplierGoods();
         void DeleteSupplierGood(int id);
+
     }
 }

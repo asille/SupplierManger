@@ -13,5 +13,6 @@ namespace BusinessLogic.Interfaces
         void ShowSupplierGoods();
         void RemoveSupplierGoods(int ID);
         SupplierGoodsDTO GetSupplierGoods(int ID);
+
     }
 }

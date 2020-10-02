@@ -20,6 +20,7 @@ namespace DAL.Tests
     [Transaction(TransactionOption.RequiresNew), ComVisible(true)]
     class SupplierGoodsDALTest
     {
+
         [Test]
         public void GetItemByIDTest()
         {

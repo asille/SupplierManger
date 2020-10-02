@@ -16,6 +16,7 @@ namespace BusinessLogic.Solid
 
 
 
+
         public History(IHistotyDAL histotyDAL)
         {
             _historyDAL = histotyDAL;

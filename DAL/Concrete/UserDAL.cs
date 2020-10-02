@@ -76,6 +76,7 @@ namespace DAL.Concrete
             }
         }
 
+
         public List<UserDTO> GetAllUsersSorted(int n)
         {
             using (SqlConnection conn = new SqlConnection(this._connectionString))

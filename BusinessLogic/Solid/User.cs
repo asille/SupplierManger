@@ -18,6 +18,7 @@ namespace BusinessLogic.Solid
 
 
 
+
         public User(IUserDAL userDAL)
         {
             _userDAL = userDAL;

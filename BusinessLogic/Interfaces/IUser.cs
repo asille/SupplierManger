@@ -17,5 +17,6 @@ namespace BusinessLogic.Interfaces
         void RemoveUser(int ID);
         UserDTO GetUser(int ID);
         UserDTO GetUserByName(string Name);
+
     }
 }

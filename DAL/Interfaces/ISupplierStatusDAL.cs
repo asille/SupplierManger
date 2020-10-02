@@ -14,5 +14,6 @@ namespace DAL.Interfaces
         SupplierStatusDTO UpdateStatuse(SupplierStatusDTO supplierStatus);
         SupplierStatusDTO CreateStatus(SupplierStatusDTO supplierStatus);
         void DeleteStatus(int id);
+
     }
 }

@@ -16,5 +16,6 @@ namespace DAL.Interfaces
         UserDTO UpdateUser(UserDTO user);
         UserDTO CreateUser(UserDTO user);
         void DeleteUser(int id);
+
     }
 }

@@ -18,5 +18,6 @@ namespace DAL.Interfaces
         GoodsDTO UpdateGoods(GoodsDTO goods);
         GoodsDTO CreateGoods(GoodsDTO goods);
         void DeleteGoods(int id);
+
     }
 }

@@ -16,6 +16,7 @@ namespace BusinessLogic.Solid
 
 
 
+
         public SupplierStatus(ISupplierStatusDAL supplierStatusDAL)
         {
             _supplierStatusDAL = supplierStatusDAL;

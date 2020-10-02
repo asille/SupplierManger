@@ -18,6 +18,7 @@ namespace BusinessLogic.Solid
             _roleDAL = roleDAL;
         }
 
+
         public RoleDTO AddRole(RoleDTO role)
         {
            Console.WriteLine("Enter Full Name, Mail, Login, Password");

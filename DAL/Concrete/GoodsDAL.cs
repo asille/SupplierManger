@@ -16,6 +16,7 @@ namespace DAL.Concrete
         {
             this._connectionString = connectionString;
         }
+
         public GoodsDTO CreateGoods(GoodsDTO goods)
         {
             using (SqlConnection conn = new SqlConnection(this._connectionString))

@@ -15,5 +15,6 @@ namespace DAL.Interfaces
         HistoryDTO UpdateHistory(HistoryDTO history);
         HistoryDTO CreateHistory(HistoryDTO history);
         void DeleteHistory(int id);
+
     }
 }

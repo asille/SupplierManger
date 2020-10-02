@@ -48,6 +48,7 @@ namespace DAL.Concrete
             }
         }
 
+
         public SupplierStatusDTO GetStatusById(int id)
         {
             using (SqlConnection conn = new SqlConnection(this._connectionString))

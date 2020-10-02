@@ -19,6 +19,7 @@ namespace DAL.Tests
     [TestFixture]
     [Transaction(TransactionOption.RequiresNew), ComVisible(true)]
     public class UserDALTest
+
     {
 
 

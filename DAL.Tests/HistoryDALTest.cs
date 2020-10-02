@@ -20,6 +20,7 @@ namespace DAL.Tests
     [Transaction(TransactionOption.RequiresNew), ComVisible(true)]
     class HistoryDALTest
     {
+
         public void CreateHistoryTest()
         {
             HistoryDAL dal = new HistoryDAL(ConfigurationManager.ConnectionStrings["History"].ConnectionString);

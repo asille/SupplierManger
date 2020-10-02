@@ -20,6 +20,7 @@ namespace DAL.Tests
     class SupplierStatusDALTest
     {
         [Test]
+
         public void CreateStatusTest()
         {
             SupplierStatusDAL dal = new SupplierStatusDAL(ConfigurationManager.ConnectionStrings["SupplierStatus"].ConnectionString);

@@ -25,6 +25,7 @@ namespace SupplierManger
             int user = Login.Login();
             console.menu(user);
             Console.ReadLine();
+
         }
     }
 }

@@ -53,6 +53,7 @@ namespace DAL.Concrete
             }
         }
 
+
         public SupplierGoodsDTO GetSupplierGoodById(int id)
         {
             using (SqlConnection conn = new SqlConnection(this._connectionString))

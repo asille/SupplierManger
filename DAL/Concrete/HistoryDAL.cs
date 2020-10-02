@@ -33,6 +33,7 @@ namespace DAL.Concrete
             }
         }
 
+
         public void DeleteHistory(int id)
         {
             using (SqlConnection conn = new SqlConnection(this._connectionString))

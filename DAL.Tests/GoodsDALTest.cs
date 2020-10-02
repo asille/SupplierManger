@@ -20,6 +20,7 @@ namespace DAL.Tests
     [Transaction(TransactionOption.RequiresNew), ComVisible(true)]
     class GoodsDALTest
     {
+
         [Test]
         public void CreateHistoryTest()
         {

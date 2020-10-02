@@ -15,5 +15,6 @@ namespace BusinessLogic.Interfaces
         void ShowStatuses();
         void RemoveStatus(int ID);
         SupplierStatusDTO GetStatus(int ID);
+
     }
 }

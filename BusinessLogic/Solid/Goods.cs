@@ -16,6 +16,7 @@ namespace BusinessLogic.Solid
 
 
 
+
         public Goods(IGoodsDAL goodsDAL)
         {
             _goodsDAL = goodsDAL;

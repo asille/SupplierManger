@@ -20,6 +20,7 @@ namespace DAL.Tests
     [Transaction(TransactionOption.RequiresNew), ComVisible(true)]
     class RoleDALTest
     {
+
         [Test]
         public void CreateRoleTest()
         {

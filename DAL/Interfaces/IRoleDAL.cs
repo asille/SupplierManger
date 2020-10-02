@@ -14,5 +14,6 @@ namespace DAL.Interfaces
         RoleDTO UpdateRole(RoleDTO role);
         RoleDTO CreateRole(RoleDTO role);
         void DeleteRole(int id);
+
     }
 }

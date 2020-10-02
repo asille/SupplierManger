@@ -17,5 +17,6 @@ namespace BusinessLogic.Interfaces
         void RemoveGoods(int ID);
         GoodsDTO GetGoods(int ID);
         GoodsDTO GetGoodsByName(string Name);
+
     }
 }

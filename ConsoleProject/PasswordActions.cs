@@ -21,6 +21,7 @@ namespace ConsoleProject
         }
 
 
+
         public byte[] PasswordEncryption(string decrypted)
         {
             byte[] password = new byte[decrypted.Length];

@@ -23,6 +23,7 @@ namespace SupplierManger
             this._connectionString = connectionString;
         }
 
+
         public void menu(int user)
         {
             string conn = ConfigurationManager.ConnectionStrings["Shipper"].ConnectionString;

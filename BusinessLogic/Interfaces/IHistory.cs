@@ -16,5 +16,6 @@ namespace BusinessLogic.Interfaces
         void ShowHistory();
         void RemoveHistory(int ID);
         HistoryDTO GetHistory(int ID);
+
     }
 }

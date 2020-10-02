@@ -12,5 +12,6 @@ namespace DTO
         public string StatusName { get; set; }
         public bool SupplierStatus   { get; set; }
         public DateTime DateTime { get; set; }
+
     }
 }

@@ -11,5 +11,6 @@ namespace DTO
         public int ID { get; set; }
         public int GoodsID { get; set; }
         public int UserID { get; set; }
+
     }
 }

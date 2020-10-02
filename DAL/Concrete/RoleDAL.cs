@@ -47,6 +47,7 @@ namespace DAL.Concrete
             }
         }
 
+
         public List<RoleDTO> GetAllRoles()
         {
             using (SqlConnection conn = new SqlConnection(this._connectionString))

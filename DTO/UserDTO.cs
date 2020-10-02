@@ -16,5 +16,6 @@ namespace DTO
         public int RoleID { get; set; }
         public int SupplierStatusID { get; set; }
 
+
     }
 }

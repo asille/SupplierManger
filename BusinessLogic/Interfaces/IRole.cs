@@ -15,5 +15,6 @@ namespace BusinessLogic.Interfaces
         RoleDTO ChangeRole(RoleDTO role);
         void RemoveRole(int ID);
         RoleDTO GetRole(int ID);
+
     }
 }
