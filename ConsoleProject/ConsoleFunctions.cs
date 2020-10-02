@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleProject
 {
-    class ConsoleFunctions
+    public class ConsoleFunctions
     {
         private string connectionString;
 
