@@ -12,7 +12,7 @@ namespace DTO
         public string FullName { get; set; }
         public string Mail { get; set; }
         public string Login { get; set; }
-        public byte Password { get; set; }
+        public byte[] Password { get; set; }
         public int RoleID { get; set; }
         public int SupplierStatusID { get; set; }
 

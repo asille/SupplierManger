@@ -68,7 +68,7 @@ namespace DAL.Concrete
                         FullName = reader["FullName"].ToString(),
                         Mail = reader["Mail"].ToString(),
                         Login = reader["Login"].ToString(),
-                        Password = Convert.ToByte(reader["Password"])
+                        Password = (byte[])(reader["Password"])
                     });
                 }
 
@@ -114,7 +114,7 @@ namespace DAL.Concrete
                         FullName = reader["FullName"].ToString(),
                         Mail = reader["Mail"].ToString(),
                         Login = reader["Login"].ToString(),
-                        Password = Convert.ToByte(reader["Password"])
+                        Password = (byte[])(reader["Password"])
                     });
                 }
                 return user;

@@ -57,6 +57,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\ConsoleProject\ConsoleProject.csproj">
+      <Project>{941740ed-f0b3-4ebb-97b4-ccf36fa7f949}</Project>
+      <Name>ConsoleProject</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{77bb1e3c-22aa-46be-82a1-4b8af829505d}</Project>
       <Name>DAL</Name>

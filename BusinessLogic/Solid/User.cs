@@ -5,6 +5,7 @@ using DTO;
 using System.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using ConsoleProject;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,13 +25,14 @@ namespace BusinessLogic.Solid
 
         public UserDTO AddUser(UserDTO user)
         {
+            ConsoleProject.PasswordActions password = new ConsoleProject.PasswordActions();
             Console.WriteLine("Enter Full Name, Mail, Login, Password");
             user = new UserDTO
             {
                 FullName = Console.ReadLine(),
                 Mail = Console.ReadLine(),
                 Login = Console.ReadLine(),
-                Password = Convert.ToByte(Console.ReadLine())
+                Password = password.PasswordEncryption(Console.ReadLine())
             };
 
 
