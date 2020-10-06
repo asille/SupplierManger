@@ -20,8 +20,8 @@ namespace SupplierManger
         static void Main(string[] args)
         {
 
-            Menu console = new Menu(ConfigurationManager.ConnectionStrings["User"].ConnectionString);
-            ConsoleFunctions Login = new ConsoleFunctions(ConfigurationManager.ConnectionStrings["User"].ConnectionString);
+            Menu console = new Menu(ConfigurationManager.ConnectionStrings["SupplierManager"].ConnectionString);
+            ConsoleFunctions Login = new ConsoleFunctions(ConfigurationManager.ConnectionStrings["SupplierManager"].ConnectionString);
             int user = Login.Login();
             console.menu(user);
             Console.ReadLine();
